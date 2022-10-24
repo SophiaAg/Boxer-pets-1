@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Noto sans', sans-serif;
+    
+}
+*{
+    margin: 0;
+   padding: 0;
+   text-decoration: none;
+   }
+
+
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-cadastro {
+      width: 100vw;
+      height: 100vh;
+      background: #4a5637;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.left-cadastro{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-cadastro > h1{
+    color: #ffbc40;
+    font-size: 3vw;
+}
+
+.left-login-img {
+    width: 80% ;
+}
+
+.right-cadastro {
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.card-cadastro{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 25px;
+    background: linear-gradient(#f2ba52, #d98555 );
+    border-radius: 20px;
+    box-shadow:  0px 10px 40px #2d2a1a;
+}
+
+.card-cadastro > h1 {
+
+    color:#000000;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(121, 121, 121, 0.626);
+    color: #e4e4e4e1;
+    font-size: 12pt;
+    box-shadow: 0px 5px 20px black ;
+    outline: none;
+    box-sizing: border-box;
+}
+.INF {
+    color:#000000;
+    
+}
+
+.textfield > label {
+    color:#000000;
+    margin-bottom: 10px;
+}
+.cadastro {
+    color:#000000;
+}
+
+.textfield> input::placeholder {
+    color: #000000;
+}
+
+.btn-cadastro{
+
+    width: 100%;
+    padding: 16px 0px;
+    margin:  25px;
+    border: none ;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #184d28 ;
+    background: #4a5637;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px -12px black ;
+   
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+       width: 85%;
+}
+}
+
+    @media only screen and (max-width: 600px){
+    .main-cadastro{
+        flex-direction: column;
+    }
+    .left-cadastro > h1 {
+        display: none;
+    }
+    .left-login-img{
+        display: none; 
+    }
+    .left-cadastro{
+        width: 90%;
+        height: auto;
+    }
+    .right-cadastro{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-img{
+        width: 50vw;
+    }
+    .card-cadastro{
+        width: 80%;
+    }
+}
+a:link, a:visited {
+    color: #ffbc40;
+    
+   
+   
+}
+ 
+
+a:hover, a:active {
+  color: white;
+  
+   
+}
+    

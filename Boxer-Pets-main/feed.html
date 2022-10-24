@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                Boxer Pets
+            </h2>
+            <div class="serach-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="search">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post"> create</label>
+                <div class="profile-photo">
+                    <img src="/Boxer-Pets-main/assets/images/profile-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!--------------------------------------Main-------------------------------------------->
+     <main>
+        <div class="container">
+            <!--esquerda-->
+            <div class="left">
+                <a  class="profile">
+                    <div class="profile-photo">
+                        <img src="/Boxer-Pets-main/assets/images/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Mizuno Scarlet</h4>
+                        <p class="text-muted">
+                            @Onuzim
+                        </p>
+                    </div>
+                </a>
+                <!-------------------------sidebar----------------------->
+               <div class="Sidebar">
+                <a  class="menu-item active">
+                    <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                </a>
+                    <a  class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>notificações</h3>
+                     <!--Notification popup-->
+                     <div class="notifications-popup">
+                        <div>
+                            <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-1.jpg">
+                             </div>
+                             <div class="notification-body">
+                            <b>Sophia Ferreira</b> accepted your friend resquest
+                            <small class="text muted">3 days AGO</small>
+                             </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-5.jpg">
+                             </div>
+                             <div class="notification body">
+                            <b>Sophia Ferreira</b> accepted your friend resquest
+                            <small class="text muted">3 days AGO</small>
+                             </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-4.jpg">
+                             </div>
+                             <div class="notification body">
+                            <b>Sophia Ferreira</b> accepted your friend resquest
+                            <small class="text muted">3 days AGO</small>
+                             </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-2.jpg">
+                             </div>
+                             <div class="notification body">
+                            <b>Sophia Ferreira</b> accepted your friend resquest
+                            <small class="text muted">3 days AGO</small>
+                             </div>
+                        </div>
+                     </div>
+                     </a>
+        
+                <a class="menu-item">
+                <span><i class="uil uil-book-open"></i></span><h3>Blog</h3>
+                </a>
+                <a class="menu-item">
+                <span><i class="uil uil-globe"></i></span><h3>Groups</h3>
+                </a>
+                <a class="menu-item">
+                <span><i class="uil uil-comment"><small class="notification-count">6+</small></i></span><h3>Messages</h3>
+               </a>
+                <a class="menu-item">
+                <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+               </a>
+               <a  class="menu-item ">
+                <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+               </a>  
+            </div>
+            
+
+            <!--END OF SIDEBAR-->
+            <label  for="creat-post" class="btn btn-primary"> creat-post</label>
+            </div>
+            <!--cabo a esquerda-->
+
+            <!--meio-->
+            <div class="middle">
+                <!--storys (frescura)-->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-17.jpg" alt="">
+                        </div>
+                        <p class="name">Your stories</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-18.jpg" alt="">
+                        </div>
+                        <p class="name">Sophia Ferreira</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-20.jpg" alt="">
+                        </div>
+                        <p class="name"> Eloisa morais</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-8.jpg" alt="">
+                        </div>
+                        <p class="name">Jefferson</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/Boxer-Pets-main/assets/images/profile-13.jpg" alt="">
+                        </div>
+                        <p class="name">camilly</p>
+                    </div>
+                </div>
+               <!--cabo os estories-->
+               <form class="create-post">
+                <div class="profile-photo">
+                    <img src="/Boxer-Pets-main/assets/images/feed-6.jpg" alt="">
+                </div>
+                    <input type="text" placeholder="Oq seu pet pensa?" id="create-post">
+                    <input type="submit" value="post" class="btn btn-primary">
+                </form>
+                <!-- FEEDS -->
+                <div class="feeds">
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="assets/images/profile-13.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Sophia Ferreira</h3>
+                                    <small> Carapicuiba , 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/Boxer-Pets-main/assets/images/feed-1.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots">
+                                </i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-10.jpg"></span>
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-4.jpg"></span>
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-15.jpg"></span>
+                            <p>Liked by <b> Ernest Archiever</b> and<b> 2,323 others</b>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Sophia</b> achei muito bela as cores e tals e bla bla bla
+                            <span class="harsh-tag"> #lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="assets/images/profile-13.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Sophia Ferreira</h3>
+                                    <small> Carapicuiba , 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/Boxer-Pets-main/assets/images/feed-1.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots">
+                                </i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-10.jpg"></span>
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-4.jpg"></span>
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-15.jpg"></span>
+                            <p>Liked by <b> Ernest Archiever</b> and<b> 2,323 others</b>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Sophia</b> achei muito bela as cores e tals e bla bla bla
+                            <span class="harsh-tag"> #lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="assets/images/profile-13.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Sophia Ferreira</h3>
+                                    <small> Carapicuiba , 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/Boxer-Pets-main/assets/images/feed-1.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots">
+                                </i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-10.jpg"></span>
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-4.jpg"></span>
+                            <span><img  src="/Boxer-Pets-main/assets/images/profile-15.jpg"></span>
+                            <p>Liked by <b> Ernest Archiever</b> and<b> 2,323 others</b>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Sophia</b> achei muito bela as cores e tals e bla bla bla
+                            <span class="harsh-tag"> #lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--direita-->
+            <div class="right">
+           <div class="menssages">
+            <div class="heading">
+                <h4>Messages</h4> <i class="uil uil-edit"></i>
+            </div>
+            <!--barra de pesquisa-->
+            <div class="search-bar">
+                <i class="uil uil-earch"></i>
+                <input type="search" placeholder="search" id="search-message">
+            </div>
+            <!---message categorias-->
+            <h6 class="active"> primary</h6>
+            <h6>general</h6>
+            <h6 class="active"> requests(7)</h6>
+           </div>
+            <!--messagem-->
+            <div class="message">
+                <div class="profile-photo">
+                    <img src="/Boxer-Pets-main/assets/images/profile-11.jpg" >
+                </div>
+                <div class="message-body">
+                    <h5>Sophia Ferreira</h5>
+                    <p class="text-muted">Just woke up bruch</p>
+                </div>
+            </div>
+         </div>
+         <!-- fim das mensages-->
+
+         <!--friend requests-->
+        <div class="friend-requests">
+            <h4>Requests</h4>
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="/Boxer-Pets-main/assets/images/profile-10.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5>Hajia bintu</h5>
+                        <p class="text-muted">
+                            8 mutual friend
+                        </p>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                accept
+                            </button>
+                            <button class="btn">
+                                decline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+     </main>
+    
+</body>
+</html>
