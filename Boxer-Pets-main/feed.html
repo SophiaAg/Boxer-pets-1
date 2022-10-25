@@ -97,7 +97,7 @@
                 <a class="menu-item">
                 <span><i class="uil uil-globe"></i></span><h3>Groups</h3>
                 </a>
-                <a class="menu-item">
+                <a class="menu-item" id="messages-notification">
                 <span><i class="uil uil-comment"><small class="notification-count">6+</small></i></span><h3>Messages</h3>
                </a>
                 <a class="menu-item">
@@ -297,30 +297,63 @@
             </div>
             <!--direita-->
             <div class="right">
-           <div class="menssages">
-            <div class="heading">
+              <div class="messages">
+                <div class="heading">
                 <h4>Messages</h4> <i class="uil uil-edit"></i>
             </div>
             <!--barra de pesquisa-->
             <div class="search-bar">
-                <i class="uil uil-earch"></i>
+                <i class="uil uil-search"></i>
                 <input type="search" placeholder="search" id="search-message">
             </div>
             <!---message categorias-->
+            <div class="category">
             <h6 class="active"> primary</h6>
             <h6>general</h6>
-            <h6 class="active"> requests(7)</h6>
-           </div>
+            <h6 class="message-requests"> requests(7)</h6>
+            </div>
             <!--messagem-->
             <div class="message">
                 <div class="profile-photo">
                     <img src="/Boxer-Pets-main/assets/images/profile-11.jpg" >
+                    <div class="active"></div>
                 </div>
                 <div class="message-body">
                     <h5>Sophia Ferreira</h5>
                     <p class="text-muted">Just woke up bruch</p>
                 </div>
             </div>
+            <div class="message">
+                <div class="profile-photo">
+                    <img src="/Boxer-Pets-main/assets/images/profile-1.jpg" >
+                    <div class="active"></div>
+                </div>
+                <div class="message-body">
+                    <h5>camillya</h5>
+                    <p class="text-muted">JMY CAT</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="profile-photo">
+                    <img src="/Boxer-Pets-main/assets/images/profile-13.jpg" >
+                    <div class="active"></div>
+                </div>
+                <div class="message-body">
+                    <h5>Jefferson</h5>
+                    <p class="text-muted">whait my dog?</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="profile-photo">
+                    <img src="/Boxer-Pets-main/assets/images/profile-14.jpg" >
+                    <div class="active"></div>
+                </div>
+                <div class="message-body">
+                    <h5>Eloisa Morais</h5>
+                    <p class="text-muted">oh my gzuiz</p>
+                </div>
+            </div>
+            
          </div>
          <!-- fim das mensages-->
 
@@ -337,21 +370,145 @@
                         <p class="text-muted">
                             8 mutual friend
                         </p>
-                        <div class="action">
-                            <button class="btn btn-primary">
-                                accept
-                            </button>
-                            <button class="btn">
-                                decline
-                            </button>
+                      
                         </div>
                     </div>
+                    <div class="action">
+                        <button class="btn btn-primary">
+                            accept
+                        </button>
+                        <button class="btn">
+                            decline
+                        </button>
+                </div>
+            </div>
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="/Boxer-Pets-main/assets/images/profile-5.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5>kkkkkkk</h5>
+                        <p class="text-muted">
+                            2 mutual friend
+                        </p>
+                      
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">
+                            accept
+                        </button>
+                        <button class="btn">
+                            decline
+                        </button>
+                </div>
+            </div>
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="/Boxer-Pets-main/assets/images/profile-13.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5>ashua ashua</h5>
+                        <p class="text-muted">
+                            28 mutual friend
+                        </p>
+                      
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">
+                            accept
+                        </button>
+                        <button class="btn">
+                            decline
+                        </button>
+                </div>
+            </div>
+            <div class="request">
+                <div class="info">
+                    <div class="profile-photo">
+                        <img src="/Boxer-Pets-main/assets/images/profile-20.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5>heheheheheh</h5>
+                        <p class="text-muted">
+                            56 mutual friend
+                        </p>
+                      
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">
+                            accept
+                        </button>
+                        <button class="btn">
+                            decline
+                        </button>
                 </div>
             </div>
         </div>
         
         </div>
+        <!--Cabo a esquerda-->
+        </div>
+        <!--SWITCH DE THEMA TEAHHHHHHHHH-->
+         <div class="customize-theme">
+            <div class="card">
+                <h2>Customize seu fundo</h2>
+                <p class="text-muted">Escolha o tamanho da fonte, a cor, e o background</p>
+
+                <!--TAMNHO DE FONTES-->
+                <div class="font-size">
+                    <h4>Font Size</h4>
+                    <div >
+                        <h6>Aa</h6>
+                        <div class="choose-size">
+                            <span class="font-size-1"></span>
+                            <span class="font-size-2 active"></span>
+                            <span class="font-size-3"></span>
+                            <span class="font-size-4"></span>
+                            <span class="font-size-5"></span>
+                        </div>
+                        <h3>Aa</h3>
+                    </div>
+                    </div>
+                    <!--Cores   Primarias-->
+                    <div class="color">
+                        <h4>Cor</h4>
+                        <div class="choose-color">
+                            <span class="color-1 active"></span>
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                            <span class="color-1"></span>
+                        </div>
+                    </div>
+
+                    <!--Cores de fundo-->
+                    <div class="background">
+                        <h4>background</h4>
+                        <div class="choose-bg">
+                            <div class="bg-1 active">
+                                <span></span>
+                                <h5 for="bg-1">Light</h5>
+                            </div>
+                            <div class="bg-2">
+                                <span></span>
+                                <h5>Dimt</h5>
+                            </div>
+                            <div class="bg-3">
+                                <span></span>
+                                <h5 for="bg-3">Apagado</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
      </main>
-    
+     <script src="feed.js"></script>
 </body>
 </html>
