@@ -310,7 +310,7 @@ font-weight: 500;
     border: none;
 }
 .empresas{
-    background-color: var(--amarelo);
+    background-color:  #8fa66d;
     margin: 5%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -347,7 +347,7 @@ font-weight: 500;
     outline: none;
     padding: 15px;
     border-radius: 14px;
-    background-color: #8fa66d;
+    background-color: var(--amarelo);
     cursor: pointer;
 }
 /*rodape*/
