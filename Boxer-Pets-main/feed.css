@@ -28,6 +28,17 @@
      list-style: none;
      border: none;
 }
+input:focus , textarea:focus{
+
+ border: none;
+}
+.img34{
+    width: 10%;
+}
+.log {
+    display: flex;
+    align-items: center;
+}
 
 body{
      font-family:'poppins', sans-serif;
@@ -104,7 +115,7 @@ nav .container{
 .search-bar{
     background:  var(--color-light);
     border-radius: var(--border-radius);
-    padding: var(--search-padding);
+    padding: var(--search-padding); 
 }
 
 .search-bar  input[type="search"]{
@@ -113,6 +124,7 @@ nav .container{
     margin-left: 1rem;
     font-size: 0.9rem;
     color: var(--color-dark);
+    border: none;
 }
 
 nav .search-bar  input[type="search"]::placeholder{
@@ -309,25 +321,15 @@ main .container .left .profile {
 }
 
 .middle .stories .story:nth-child(1){
-    background: url(./assets/images/story-1.jpg) 
+    background: url(./assets/images/proocurado1.jpg) 
     no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(2){
-    background: url(./assets/images/story-2.jpg) 
+    background: url(./assets/images/Procurado2.jpg) 
     no-repeat center center/cover;
 }
-.middle .stories .story:nth-child(3){
-    background: url(./assets/images/story-3.jpg) 
-    no-repeat center center/cover;
-}
-.middle .stories .story:nth-child(4){
-    background: url(./assets/images/story-4.jpg) 
-    no-repeat center center/cover;
-}
-.middle .stories .story:nth-child(5){
-    background: url(./assets/images/story-5.jpg) 
-    no-repeat center center/cover;
-}
+
+
 
 .middle .story .profile-photo{
     width: 2rem;
@@ -563,6 +565,7 @@ main .container .right{
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 
@@ -721,13 +724,17 @@ Responsivo para pequenos laptops e grandes tablets
     main .container .left .profile{
         display: none;
     }
-
+    
     .Sidebar h3 {
         display: none;
     }
 
     .left .btn {
         display: none;
+    }
+
+    .customize-theme .card {
+        width: 96vw;
     }
 }
 
@@ -777,5 +784,8 @@ responsivo celular e tablets pequenos
 
     main .container .right {
         display: none;
+    }
+    .customize-theme .card {
+        width: 92vw;
     }
 }

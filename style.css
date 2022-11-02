@@ -24,6 +24,7 @@ width: 100%;
 
 .background-verde{
     background: var(--azulbb);
+    
 }
 
 .container{
@@ -34,6 +35,16 @@ width: 100%;
 }
 .container2{
     display: flex;
+}
+.top{
+    background: rgb(135, 135, 89);
+    position: fixed;
+    z-index: 1000;
+    max-width: 98rem;
+    overflow-x: hidden;
+    padding: 0 2%;
+    margin: 0 auto;
+    width: 100%;   
 }
 .logo{
     display: flex;
