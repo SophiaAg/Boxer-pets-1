@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2? família= Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700 &family= Slabo+27px & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1.900 & display=swap');
+
 
 *{
     margin: 0;
@@ -9,42 +10,30 @@
     list-style: none;
 }
 body{
-font-family: 'Slabo 27px', serifa;
-width: 100%;
+font-family:  'Arimo', sem serifa;
+width: 101%;
 }
 :root{
   --amareloclaro: #fff6c5;
   --amarelo: #ffe440;
   --azul: #1511ff;
-  --azulbb: #6b6cff;
-  --roxo: #cec7fc;
+  --azulbb: #6b6bffcc;
+  --roxo: #c3bcee;
   --bum: linear-gradient(#ffe440,  #fff6c5 );
 
 }
 
 .background-verde{
     background: var(--azulbb);
-    
 }
 
 .container{
     max-width: 98rem;
-    padding: 0 2%;
     margin: 0 auto;
     width: 100%;   
 }
 .container2{
     display: flex;
-}
-.top{
-    background: rgb(135, 135, 89);
-    position: fixed;
-    z-index: 1000;
-    max-width: 98rem;
-    overflow-x: hidden;
-    padding: 0 2%;
-    margin: 0 auto;
-    width: 100%;   
 }
 .logo{
     display: flex;
@@ -94,16 +83,18 @@ section,footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    background-color:  slategray;
  }
  .logo a{
     font-weight: bold;
     color: white;
-    margin-left: 0.8rem;
+
 }
 .ul{
     display: flex;
     align-items: center;
+    
 }
 .ul li{
     margin: 0 35px;
@@ -123,22 +114,21 @@ main .container{
 
 }
 
-.main-text{
+.main-text1{
      width: 50%;
      color: white
 }
-.main-text h1 h2{
+.main-text1 h1 h2{
     font-size: 50px;
     color: #ccc;
 }
-.main-text p br{
-    color: #ccc;
-    line-height: 2.5rem;
+.main-text1 p{
+    color: #000000;
+    
 }
-.main-text div{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+.main-text1 {
+    margin-top: 5%;
+    margin-left: 3%;
 }
 .main-img img{
     max-width: 100%;
@@ -211,7 +201,7 @@ main .container .main-text h1 {
 }
 
 /*abs*/
-.diferentes .conteiner {
+.diferentes .sol {
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
@@ -220,27 +210,33 @@ main .container .main-text h1 {
 .diferentes .abas{
     width: 20%;
     cursor: pointer;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 15px;
+    border-radius: 20px;
     background-color:#fdefe7;
     transition: 0.3s;
     
 }
 .diferentes .abas img{
-    width: 60px;
+    width: 20%;
+    height: max-content;
 }
 .diferentes .abas .titulo{
-    margin: 13px 0;
+    margin: 10px 0;
     font-weight: 600;
+
+    
 }
 .diferentes .abas:hover{
  box-shadow: 0px 10px 67px 8px #666262a2; 
 }
 .diferentes .abas p{
-    margin: 20px;
+    margin: 10px;
     flex-direction: column;
 }
-
+.diferentes .abas .titulo2 .titulo{
+    display: flex;
+    align-items: center;
+}
 /*JANELA*/
 .casa .container{
     display: flex;
@@ -315,10 +311,15 @@ font-weight: 500;
 }
 .empresas{
     background-color: var(--amarelo);
+    margin: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
 }
 .empresas .box-empresas{
     text-align: center;
-    padding: 100px;
+    padding: 7%;
     background-image: url('img/final.png');
     background-repeat:no-repeat;
     background-size: cover;
@@ -348,10 +349,98 @@ font-weight: 500;
     border-radius: 14px;
     background-color: #8fa66d;
     cursor: pointer;
-
+}
+/*rodape*/
+footer{
+    background-color:  #6b6cff;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h3{
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+} 
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+} 
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col p {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+} 
+.redes-socias{
+    margin: 2%;
+}
+.footer-col img{
+    width: 40px;
+    max-width: 100%;
+}
+.footer-col ul li a :hover{
+    color: #000000;
+    padding-left: 10px;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #0060f0;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #733620;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
 }
 /*responsivo*/
 @media (max-width:600px){
+    .footer-col{
+        width: 100%;
+    }
 .container2{
    flex-direction: column;
 }
@@ -368,13 +457,16 @@ font-weight: 500;
             flex-direction:column;}
     }
     @media (max-width:900px){
-        .diferentes .conteiner{
+        .diferentes .sol{
             flex-direction: column;
-        
+            
         }
         .diferentes .abas{
             width: 90%;
-            margin: 20px;}
+            margin: 20px;
+            display: block;
+        
+        }
     
         .diferentes .abas p{
                 margin: 5%;}
@@ -410,3 +502,8 @@ font-weight: 500;
                 margin-top: 20px;
             }
         }
+    @media (max-width:800px) {
+        .footer-cl{
+            width: 50%;
+            margin-bottom: 30px;
+        }}
