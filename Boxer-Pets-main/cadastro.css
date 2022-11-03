@@ -19,7 +19,7 @@ body * {
 .main-cadastro {
       width: 100vw;
       height: 100vh;
-      background: #4a5637;
+      background: whitesmoke;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,7 +35,7 @@ body * {
 }
 
 .left-cadastro > h1{
-    color: #ffbc40;
+    color: black;
     font-size: 3vw;
 }
 
@@ -58,7 +58,7 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 25px;
-    background: linear-gradient(#f2ba52, #d98555 );
+    background: rgba(25, 79, 25, 0.816);
     border-radius: 20px;
 
     box-shadow:  0px 10px 40px #2d2a1a;
@@ -66,7 +66,7 @@ body * {
 
 .card-cadastro > h1 {
 
-    color:#000000;
+    color:white;
     font-weight: 800;
     margin: 0;
 }
@@ -86,32 +86,35 @@ body * {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: rgba(121, 121, 121, 0.626);
+    background: #e4e4e4e1;
     color: #e4e4e4e1;
     font-size: 12pt;
-    box-shadow: 0px 5px 20px black ;
+    box-shadow: 0px 10px 10px #1d1d1d58 ;
     outline: none;
     box-sizing: border-box;
 }
 .INF {
-    color:#000000;
+    color:white;
     
 }
 
 .textfield > label {
-    color:#000000;
+    color:white;
     margin-bottom: 10px;
 }
 .cadastro {
-    color:#000000;
+    color: white;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    
 }
 
 .textfield> input::placeholder {
     color: #000000;
+    
 }
 
-.btn-cadastro{
 
+.btn-cadastro{
     width: 100%;
     padding: 16px 0px;
     margin:  25px;
@@ -122,10 +125,10 @@ body * {
     font-weight: 800;
     letter-spacing: 3px;
     color: #184d28 ;
-    background: #4a5637;
+    background: rgb(201, 118, 2);;
     cursor: pointer;
-    box-shadow: 0px 5px 20px -12px black ;
    
+    box-shadow:  0px 10px 10px #1d1d1d58 ;
 }
 
 @media only screen and (max-width: 950px){
@@ -160,7 +163,7 @@ body * {
     }
 }
 a:link, a:visited {
-    color: #ffbc40;
+    color: white;
     
    
    
@@ -168,7 +171,7 @@ a:link, a:visited {
  
 
 a:hover, a:active {
-  color: white;
+  color: gold;
   
    
 }

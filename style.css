@@ -11,16 +11,16 @@
     
 }
 body{
-font-family:  'Arimo', sem serifa;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 width: 100%;
 }
 :root{
   --amareloclaro: #fff6c5;
-  --amarelo: #ffe440;
+  --amarelo: rgb(225, 159, 2);
   --azul: #1511ff;
   --azulbb: #1e6c1bba;
   --roxo: #c3bcee;
-  --bum: linear-gradient(#ffe440,  #ffe440 );
+  --bum: linear-gradient(rgb(255, 191, 0), rgb(255, 191, 0)  );
 
 }
 .logotipo{
@@ -99,7 +99,7 @@ section,footer{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    background-color:  rgb(197, 197, 197);
+    background-color:  whitesmoke;
  }
  .logo a{
     font-weight: bold;
@@ -342,6 +342,7 @@ font-weight: 500;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
+    border-bottom: 0.1rem solid black;
 }
 .empresas .box-empresas h2{
     font-size: 2.5rem;
@@ -358,6 +359,7 @@ font-weight: 500;
     color: #00000098;
     background-color: #faefda;
     
+    
 }
 .empresas .box-empresas button{
     font-size: 15px;
@@ -371,7 +373,7 @@ font-weight: 500;
 }
 /*rodape*/
 footer{
-    background-color: rgb(197, 197, 197) ;
+    background-color: whitesmoke ;
     padding: 50px 0;
 }
 .container-footer{
@@ -439,7 +441,7 @@ footer{
     outline: none;
     border: 1px solid white;
     color: black;
-    background-color: snow;
+    background-color: rgb(235, 233, 233);
     border-radius: 14px;
     margin-bottom: 2px;
 }
