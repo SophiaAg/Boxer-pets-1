@@ -242,7 +242,7 @@ main .container .left .profile {
 }
 
 .left .btn {
-    margin: 1rem;
+    margin: 1rem auto;
     width: 100%;
     text-align: center;
     padding: 1rem 0;
@@ -702,6 +702,11 @@ main .container .right{
     border-radius: 50%;
     margin-right: 1rem;
 }
+/*teste que deu certo*/
+.letras{
+    font-size: 15px
+}
+
 
 /*============================
 Responsivo para pequenos laptops e grandes tablets

@@ -25,7 +25,7 @@ width: 100%;
   --azul: #1511ff;
   --azulbb: #1e6c1bba;
   --roxo: #c3bcee;
-  --bum: linear-gradient(rgb(255, 191, 0), rgb(255, 191, 0) );
+  --bum: linear-gradient(rgb(255, 191, 0), rgb(255, 191, 0)  );
 
 }
 .logotipo{
@@ -47,7 +47,7 @@ width: 100%;
 
 
 .container{
-    max-width: 281382172rem;
+    max-width: 98rem;
     margin: 0 auto;
     width: 100%;   
 }
@@ -182,7 +182,7 @@ main .container .main-text div{
 
     /*resultados*/
 .resultados{
-    background: var(--bum);
+    background: var(--amarelo);
 
 }
 .resultados .container{
@@ -234,9 +234,6 @@ main .container .main-text h1 {
     border-radius: 20px;
     background-color:#fdefe7;
     transition: 0.3s;
-    margin-right: 1rem;
-    margin-left: 1rem;;
-    box-shadow: 0px 10px 10px #1d1d1d58;
     
 }
 .diferentes .abas img{
@@ -264,8 +261,6 @@ main .container .main-text h1 {
 .casa .container{
     display: flex;
     align-items: center;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
 }
 .casa .casa-img{
     width: 50%;
@@ -276,7 +271,7 @@ main .container .main-text h1 {
 }
 .casa .casa-text{
     width: 70%;
-    padding-left: 1rem;
+    padding-left: 0;
 }
 .casa .casa-text h2{
     font-size: 2.5rem;
@@ -300,8 +295,9 @@ width: 15% ;
    font-weight: 600;
    color: black; 
 }
-.lugares .h2{
-   font-size: 2.5rem;
+.lugares .h2 {
+   font-size: 3.5rem;
+
 }
 .cads{
     display: flex;
@@ -313,11 +309,8 @@ width: 30%;
 text-align: center;
 padding: 30px 0;
 border-radius: 20px;
-box-shadow: 0px 10px 10px #1d1d1d58 ;
-background-color: rgb(255, 191, 0);
-margin: 1rem 1rem 2rem 0.2rem;
+box-shadow: 0px 35px 97px -15px rgba(0, 0, 0, 0.08);
 }
-
 .lugares .cads img{
   width: 80px;
 }
@@ -380,7 +373,7 @@ font-weight: 500;
     outline: none;
     padding: 15px;
     border-radius: 14px;
-    background-color: rgb(255, 191, 0);
+    background-color: var(--amarelo);
     cursor: pointer;
     
 }
@@ -472,7 +465,7 @@ footer{
     color: black;
     border-radius: 3px;
     font-weight: bold;
-    background-color: rgb(255, 191, 0);
+    background-color: var(--amarelo);
     border-radius: 14px;
     margin-bottom: 6px;
 }
@@ -481,7 +474,6 @@ footer{
     .footer-col{
         width: 100%;
     }
-    
 .container2{
    flex-direction: column;
 }
@@ -501,7 +493,6 @@ footer{
         .diferentes .sol{
             flex-direction: column;
             
-        
         }
         .diferentes .abas{
             width: 90%;
@@ -517,6 +508,8 @@ footer{
         .casa .container{
             align-items: flex-start;
         margin: 2%;
+        flex-direction: column-reverse;
+    
         }
         .casa .casa-text
         .casa .casa-img{
