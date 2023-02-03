@@ -1,239 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt Br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="website icon" type=" SVG"
-    href="/Boxer-Pets-main/assets/Sem título-4.svg">
-    <title>BOXER PETS</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Boxer Pets</title>
 </head>
-<body>
-    <div class="background-verde">
-        <!--header-->
-         <header>
-           <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src="/Boxer-Pets-main/assets/Sem título-4.svg" alt="logo do cachorro" class="logotipo">
-                    <a href="index.html"> BOXER PETS </a>
-                </div>
-                <div>
-                   <a href="/Boxer-Pets-main/login.html"> <button class="bum">LOGIN</button> </a> 
 
-               </div>
-           </div>
-         </header>
-         <!--fim fo header-->
-         <!--MAIN-->
-         <main>
-            <div class="container2">
-                <!--main text-->
-                <div class="main-text1">
-                  <h1>Olhando o mundo Pet com outros olhos.</h1>
-                  <h2>Dá forma que você nunca viu</h2>
-                  <br>  <p> Conheça a Boxer Pets</p> </br>
-                    <button class="bum2">Cadastre-se</button>
-                  
-                </div>
-                <!--fim main-text-->
-                <!-- main img-->
-                <div class="main-img">
-                    <img class="img2" src="/Boxer-Pets-main/animais1.png.png" alt="animais">
-                    
-                </div>
-                <!--fim main img-->
-            </div>
-         </main>
-         <!--fim do main-->
-    </div>
-    <!--fim da parte verde-->
-    <!--diferentes-->
-   <section class="diferentes">
-    <div class="sol">
-      <div class="abas">
-          <img src="/Boxer-Pets-main/assets/home.png" alt="casa">
-          <h3 class="titulo"> Home </h3>
-          <p> 
-            Home é  nossa página principal que ficará as principais funções do site. 
-            animais perdidos, doações e vaquinha.
-            uma página mais prática no qual vc consegue republicar algo, curtir e compartilhar.
-          </p>
-      </div>
-      <div class="abas"> 
-        <img src="/Boxer-Pets-main/assets/chats.png" alt="chats">
-        <h3 class="titulo"> Chats </h3>
-        <p> 
-            O chat é uma ferramenta para que todas as pessoas cadastradas poção conversar entre si,
-             assim podendo pedir dicas, informações, concelhos sobre o mundo animal, 
-             ou podendo conversar com alguém de forma privada  
-        </p>
-    </div>
-    <div class="abas"> 
-        <img src="/Boxer-Pets-main/assets/sino.png" alt="blog">
-        <h3 class="titulo"> Blog </h3>
-        <p> 
-            O blog será seu mundo de descobertas, lendo dicas, curiosidades, 
-            conselhos que a própria equipe da Boxer Pets postará. 
-            Um local onde você pode saber um pouco mais sobre os bichinhos               
-        </p>
-    </div>
-    <div class="abas"> 
-        <img src="/Boxer-Pets-main/assets/ongs.png" alt="ongs">
-        <h3 class="titulo"> Ongs </h3>
-        <p> 
-            O espaço ongs será para que os usuários consigam encontrar e entrar em contato com as ongs com mais facilidade.
-             Seja para adoção, denunciar de maus-tratos ou visitar. Além disso, poderá encontrar empresas do mundo pet,
-              caso seja uma conta profissional colocará seus produtos lá. 
-        </p>
-    </div>
-    </div>
-   </section>
-    <!--resultados-->
-    <section class="resultados">
-        <!--container-->
-        <div class="container">
-            <!--resultados-text--><br>
-            <div class="resultado-text">
-                Toda ajuda é AJUDA.
-            </div></br>
-            <!--fim de resultados text-->
-            <div class="numeros">
-            <p> 
-                <img src="/Boxer-Pets-main/assets/sozinho 3.svg" class="auau"><br></br>
-                <span>30 milhões</span> <br>
-                de animais abandonados
-            </p> </br>
+<script>
+      function loading(){
+            document.getElementsByClassName("box-load")[0].style.display = "none";
+        }
+</script>
 
-            <p> 
-                <img src="/Boxer-Pets-main/assets/fome2.svg" class="auau"><br></br>
-                <span> 2,7 milhões</span> <br>
-                de cães e gatos morrem de fome e sede no Brasil.
-            </p> </br>
-
-            <p> 
-                <img src="/Boxer-Pets-main/assets/ong,1.svg" class="aiai"> <br></br>
-                <span>170mil</span> <br>
-               animais abandonados sob cuidado de ONGs
-            </p>  </br>
-            </div>
-        </div>
-        <!--fim de container-->
-    </section>
-   <!--fim de resultados-->
-   
-   <!--fim de diferentes-->
-   <!--section casa-->
-   <section class="casa">
-    <div class="container">
-       
-        <div class="casa-text">
-            <h2>Faça parte do nosso futuro</h2>
-            <p>
-                Ajudar e ser ajudado nunca foi tão simples, tendo tudo em um lugar só. 
-                Um ambiente pra conversar, ajudar e descobrir, além de poder contribuir seu grande ou pequeno negócio.
-            </p>
-            <p>
-                <b> Vai ficar fora disso? </b>
-            </p>
-        </div>
-        <div class="casa-img">
-            <img src="/Boxer-Pets-main/assets/janela.png" alt="janela">
-        </div>
+<body onload="loading()">
+    <div class="box-load">
+    <div class="pre"> </div>
     </div>
+    <header>
+        <h1><span id="boxer">Boxer </span><span id="pet"> Pets</span></h1>
 
-   </section>
-    <!--end section casa-->
-    <!--explicações dos botões-->
-    <section class="lugares">
-      <div class="container">
-           <p class="azul">Entenda melhor nosso mundo</p>
-           <h2> Principais funções</h2>
-           <div class="cads">
-            <!--item1-->
-            <div class="cads-item">
-               <img class="imgs" src="/Boxer-Pets-main/assets/dinheiro.png" alt="dinheiro">
-               <p class="local-casa"> vaquinhas</p>
-               <p class="Doe">Inicie uma vaquinha</p>
-              <br> <p class="contato">Um local para que sua vaquinha online tenha maiores resultados</p> </br>
-              
-            </div>
-              <!--fim de item1-->
-                 <!--item2-->
-            <div class="cads-item">
-                <img class="imgs" src="/Boxer-Pets-main/assets/perigo.png" alt="perigo">
-                <p class="local-casa"> Animais perdidos</p>
-                <p class="Doe">Animais Perdidos</p>
-                <br><p class="contato">Mais olhos, maiores possibilidades. Um ambiente para os animais perdidos e que possam encontrar seu lar.</p> </br>
-    
-             </div>
-               <!--fim de item2-->
-                  <!--item3-->
-            <div class="cads-item">
-                <img class="imgs" src="/Boxer-Pets-main/assets/paw.png" alt="paw">
-                <p class="local-casa"> Doações/</p>
-                <p class="Doe">Doe conosco</p>
-              <br>  <p class="contato">Ajude quem precisa, as doações são grandes contribuições na vida de alguém. </p> </br>
-    
-             </div>
-               <!--fim de item3-->
-           </div>
-      </div>
-    </section>
-    <!--fim dos botões-->
-    <!--empresas-->
-    <section class="empresas">
-        <div class="box-empresas">
-            <h2>Uma conta para a sua Empresa</h2>
-            <p> Se quer divulgar o seu trabalho ou seu serviço, abra uma conta profissional.</p>
-            <form>
-                <input type="email" placeholder="Digite o seu Email">
-                <button> Inscreva-se</button>
-            </form>
-        </div>
+        <section class="menu">
+            <ul class="menu-list">
+                <li><a href="#Inicio"   id="botao1"> Inicio</a></li>
+                <li >Sobre nos</li>
+                <li>Serviços</li>
+                <li>Contato</li>
+                <li id="botao2"><a href="#">Cadastre-se</a></li>
+            </ul>
 
-    </section>
-    <!--fim das empresas-->
-    <!--rodapé-->
-    <footer>
-        <div class="container-footer">
-            <div class="row-footer">
-                <div class="footer-col">
-                    <h3>Precisa de ajuda?</h3>
-                    <h4> Entre em contato com a gente</h4>
-                    <ul>
-                        <li> <a href=""> email: Contacorporativa@gmail.com</a></li>
-                        <li> <a href=""> contato: 11 XXXXX-XXXX</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Conta Profissonal</h3>
-                    <h4> o que é uma conta profissional?</h4>
-                   <br>  <p>Com tantos concorrentes é essencial a divulgação de sua empressa pet.
-                    Com isso pensamos com cuidado e criamos um espaço para o seu grande ou pequeno negocio.
-                 </p> </br>
-                </div>
-                <div class="footer-col" class="direita">
-                    <h3>Cadastre-se</h3>
-                    <div class="form-sub">
-                        <form>
-                            <input type="email" placeholder="Digite o seu e-mail" required>
-                            <button>Clique aqui!</button>
-                        </form>
-                    </div>
-                <div class="redes-socias">
-                    <a href=""><img class="4" src="/Boxer-Pets-main/assets/instagram.png" alt="insta"><i class="fa fa-instagram"> </i>  </a>
-                    <a href=""><img class="4" src="/Boxer-Pets-main/assets/facebook.png" alt="face"><i class="fa fa-facebook"> </i>  </a>
-                    <a href=""><img class="4" src="/Boxer-Pets-main/assets/twitter.png" alt="passaro"><i class="fa fa-twitter"> </i>  </a>
-                    
-                </div>
-                </div>
-                 </div>
-        </div>
-            </div>
-    </footer>
-    <!--fim do rodapé-->
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title" id="Inicio"><span id="ama">Informação </span> consientização </p>
+            <p class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil rerum itaque quisquam!
+                Natus repudiandae nesciunt tempora odio amet. Saepe?</p>
+            <button class="cta">Saiba mais</button>
+        </section>
+
+        <section class="right">
+            <div class="circle"></div>
+            <img src="./images/Cat and dog-bro.svg" alt="Langing image">
+        </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+
+    </script>
+
+</section>
+
 </body>
+
 </html>

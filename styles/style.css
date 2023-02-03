@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    @keyframes load{
+    to{transform: rotate(360deg);}
+    }
+.pre{
+    width: 80px ;
+    height: 80px;
+    background-image: url(/images/Good\ doggy-bro.svg);
+    background-position: center ;
+    background-size: contain;
+
+    animation: load 2s infinite linear;
+
+}
+.cta:hover{
+    background-color: #ff5360;
+    transition: 0.5s linear;
+}
+
+#pet:hover{
+    color: #ff5360;
+    transition: 0.4s linear;
+}
+
+#boxer:hover{
+    color:rgb(62, 112, 71); 
+    transition: 0.4s linear;
+}
+
+.box-load{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34,34,34);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    min-height: 100%;
+    width: 100%;
+    background-color: rgb(34,34,34);
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.menu-list a{
+    display: inline-block;
+    
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-color: rgb(62, 112, 71);
+    clip-path: circle(90% at right 1000px);
+}
+a{
+   text-decoration: none;
+   color: white
+}
+#botao2{
+    border: 2px solid rgb(84, 162, 98);
+   padding: 10px;
+   border-radius: 30px;
+}
+
+#botao2:hover{
+    background-color: rgb(84, 162, 98);
+    transition: 0.5s;
+    color: white;
+}
+
+#ama{
+    color: white;
+}
+
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    font-size: 16px;
+    position: relative;
+}
+
+header h1  {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu button {
+    display: none;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list li  {
+    display: inline-block;
+    margin-left: 32px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-list li.active,
+.menu-list li:hover {
+    color: rgb(84, 162, 98); 
+}
+#botao1:hover{
+    color: rgb(84, 162, 98); 
+}
+
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.right img {
+    width: 80%;
+}
+
+.left {
+    max-width: 45%;
+    padding: 40px 64px;
+}
+
+.right {
+    height: 100%;
+    width: 100%;
+    padding: 20px 20px;
+    z-index: -1;
+    display: flex;
+}
+
+.title {
+    color: #ff5360;
+    font-size: 2.8em;
+    width: 50%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 48px;
+}
+
+.msg {
+    color: #9fb5cc;
+    font-size: 1.1em;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+
+button.cta {
+    border: none;
+    outline: none;
+    background-color: rgb(84, 162, 98);
+    color: #fff;
+    padding: 18px 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1),
+    0 15px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: opacity 0.9;
+}
+
+button.cta:hover {
+    opacity: 0.9;
+}
+
+/*  -----    RESPONSIVENESS    -----  */
+
+@media (max-width:850px) 
+{
+    .circle{
+        display: none;
+    }
+    header,
+    .left,
+    .right {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .right img{
+       width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 650px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 100%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        font-size: 0.8em;
+    }
+
+    .left * {
+        width: 95%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    button.cta {
+        max-width: 60%;
+    }
+
+    .right img {
+        width: 80%;
+    }
+
+    /* Nav Menu Responsiveness */
+
+    .menu button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        color: rgb(84, 162, 98);
+        outline: none;
+        font-size: 1.7em;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu i.fa-times,
+    .menu.opened i.fa-bars {
+        display: none;
+    }
+
+    .menu.opened i.fa-times,
+    .menu i.fa-bars {
+        display: block;
+        animation: enter 0.8s;
+    }
+
+    @keyframes enter {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100%;
+        background-color: rgb(84, 162, 98);
+        color: #fff;
+        padding: 46px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 80px;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+
+    .menu-list li {
+        font-size: 1.7em;
+        margin: 32px 0px;
+    }
+
+    .menu.opened .menu-list {
+        transform: translateX(0);
+    }
+
+    .menu.opened button {
+        color: #fff;
+    }
+    .right img{
+width: 100%;
+display: flex;
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+         display: none;
+        z-index: -1;
+        height: 100%;
+        background-color: rgb(62, 112, 71);
+        clip-path: circle(70% at right 100%);
+    }
+}
